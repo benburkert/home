@@ -33,5 +33,9 @@ Pictures
 go
 src
 
+# fish
+.config/fish/fish_variables
+.local/share/fish/fish_history
+
 # vim
 .viminfo
