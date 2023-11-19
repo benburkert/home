@@ -1,4 +1,5 @@
 source ~/.config/fish/functions/nodejs.fish
+source ~/.config/fish/functions/python.fish
 
 function fish_prompt
     # This prompt shows:
@@ -90,6 +91,12 @@ function fish_prompt
     set -l nodejs_version (nodejs_version)
     test -n "$nodejs_version"
     and _prompt_wrapper yellow '' $nodejs_version
+
+    # python
+
+    set -l python_version (python_version)
+    test -n "$python_version"
+    and _prompt_wrapper blue '' $python_version
 
     # date
 

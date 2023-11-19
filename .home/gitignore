@@ -30,6 +30,7 @@ Pictures
 .nix-defexpr
 .npm
 .swiftpm
+.yarnrc
 go
 src
 

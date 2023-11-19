@@ -1,6 +1,7 @@
 function nodejs_version
     if test -f package.json
-        asdf current nodejs | read -l _1 nodejs_version _3
-        echo $nodejs_version
+        if set -l nodejs_version (asdf_version_for nodejs)
+            echo $nodejs_version
+        end
     end
 end
