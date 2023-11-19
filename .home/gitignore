@@ -34,7 +34,8 @@ go
 src
 
 # fish
-.config/fish/completions/
+.config/fish/completions
+.config/fish/conf.d
 .config/fish/fish_variables
 .local/share/fish/fish_history
 .local/share/fish/generated_completions
