@@ -1,0 +1,6 @@
+# universal
+.tmp
+
+# macos
+.CFUserTextEncoding
+.DS_Store

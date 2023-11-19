@@ -1,0 +1,7 @@
+[core]
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
+[user]
+	name = Ben Burkert
+	email = ben@benburkert.com

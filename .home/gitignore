@@ -1,0 +1,37 @@
+# home
+.home
+!.home/config
+!.home/gitignore
+
+# universal
+.bash_history
+.lesshst
+
+# macos
+.Trash
+.zprofile
+.zsh_history
+Applications
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+Public
+Pictures
+
+# development
+.asdf
+.bundle
+.cache
+.cargo
+.gem
+.nix-defexpr
+.npm
+.swiftpm
+go
+src
+
+# vim
+.viminfo
