@@ -1,0 +1,2 @@
+# devtools
+brew 'gh'
