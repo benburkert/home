@@ -6,6 +6,7 @@
 # universal
 .bash_history
 .lesshst
+.local
 
 # macos
 .Trash
@@ -38,9 +39,6 @@ src
 .config/fish/completions
 .config/fish/conf.d
 .config/fish/fish_variables
-.local/share/fish/fish_history
-.local/share/fish/generated_completions
-.local/share/fish/vendor_completions.d
 
 # vim
 .viminfo
