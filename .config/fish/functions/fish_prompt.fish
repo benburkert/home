@@ -45,9 +45,6 @@ function fish_prompt
         set git_info " $git_status$git_branch"
     end
 
-    set -q __fish_git_prompt_showupstream
-    or set -g __fish_git_prompt_showupstream auto
-
     function _prompt_wrapper
         set clr $argv[1]
         set -l field_name $argv[2]
@@ -77,6 +74,12 @@ function fish_prompt
 
     test -n "$git_info"
     and _prompt_wrapper yellow '' $git_info
+
+    # go
+
+    set -l _go_version (go_version)
+    test -n "$_go_version"
+    and _prompt_wrapper blue '' $_go_version
 
     # date
 
