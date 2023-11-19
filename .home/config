@@ -1,10 +1,13 @@
 [core]
-	repositoryformatversion = 0
-	filemode = true
 	bare = false
-	logallrefupdates = true
-	worktree = ~/
-	ignorecase = true
-	precomposeunicode = true
-
 	excludesfile = ~/.home/gitignore
+	filemode = true
+	ignorecase = true
+	logallrefupdates = true
+	precomposeunicode = true
+	repositoryformatversion = 0
+	worktree = ~/
+
+[submodule ".config/tmux"]
+	url = https://github.com/gpakosz/.tmux.git
+	active = true
