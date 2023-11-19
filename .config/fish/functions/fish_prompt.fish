@@ -1,7 +1,11 @@
+source ~/.config/fish/functions/nodejs.fish
+
 function fish_prompt
     # This prompt shows:
     # - the current path (with prompt_pwd)
     # - the current git status, if any, with custom git query
+    # - the current go version, if the working dir is in a go project
+    # - the current nodejs version, if the working dir is the root of a nodejs project
     # - date +%X
     # - current background jobs, if any
 
@@ -77,9 +81,15 @@ function fish_prompt
 
     # go
 
-    set -l _go_version (go_version)
-    test -n "$_go_version"
-    and _prompt_wrapper blue '' $_go_version
+    set -l go_version (go_version)
+    test -n "$go_version"
+    and _prompt_wrapper blue '' $go_version
+
+    # nodejs
+
+    set -l nodejs_version (nodejs_version)
+    test -n "$nodejs_version"
+    and _prompt_wrapper yellow '' $nodejs_version
 
     # date
 
