@@ -2,6 +2,10 @@
 brew 'asdf'
 brew 'nvim'
 
+# services
+brew 'postgresql@15', restart_service: true, link: true
+brew 'redis', restart_service: true, link: true
+
 # utilities
 brew 'gh'
 brew 'git'
