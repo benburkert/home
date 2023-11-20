@@ -30,7 +30,9 @@ Pictures
 .gem
 .nix-defexpr
 .npm
+.ssh
 .swiftpm
+.upterm
 .yarnrc
 go
 src
