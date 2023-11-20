@@ -41,4 +41,5 @@ src
 .config/fish/fish_variables
 
 # vim
+.vim
 .viminfo

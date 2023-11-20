@@ -1,5 +1,6 @@
 # devtools
 brew 'asdf'
+brew 'nvim'
 
 # utilities
 brew 'gh'
