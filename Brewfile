@@ -11,6 +11,7 @@ brew 'redis', restart_service: true, link: true
 # utilities
 brew 'anchor'
 brew 'asdf'
+brew 'flyctl'
 brew 'gh'
 brew 'git'
 brew 'htop'

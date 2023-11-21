@@ -27,6 +27,7 @@ Pictures
 .bundle
 .cache
 .cargo
+.fly
 .gem
 .nix-defexpr
 .npm
