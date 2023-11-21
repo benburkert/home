@@ -33,6 +33,7 @@ Pictures
 .npm
 .ssh
 .swiftpm
+.terraform.d
 .upterm
 .yarnrc
 go
