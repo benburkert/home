@@ -8,10 +8,6 @@
 	repositoryformatversion = 0
 	worktree = ~/
 
-[submodule ".config/nvim"]
-	url = https://github.com/LunarVim/Neovim-from-scratch.git
-	active = true
-
 [submodule ".config/tmux"]
 	url = https://github.com/gpakosz/.tmux.git
 	active = true
