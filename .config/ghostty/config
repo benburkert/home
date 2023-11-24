@@ -8,7 +8,7 @@ font-family = "MartianMonoCnRg Nerd Font"
 font-size = 13
 
 # keybinds
-keybind = ctrl+space=text:\x1b
+keybind = ctrl+space=esc:
 
 # theme : https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/ghostty/GruvboxDarkHards
 palette = 0=#1b1b1b
