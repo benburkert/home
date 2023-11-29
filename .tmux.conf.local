@@ -379,10 +379,17 @@ set -g status-position top
 
 # retain TERM=xterm-ghostty
 set -g default-terminal "xterm-ghostty"
+set-option -sa terminal-features ',xterm-ghostty:RGB'
 
 # disable C-a prefix
 set -gu prefix2
 unbind C-a
+
+# disable repeate mode when navigating panes
+bind-key -T prefix h select-pane -L
+bind-key -T prefix j select-pane -D
+bind-key -T prefix k select-pane -U
+bind-key -T prefix l select-pane -R
 
 # -- tpm -----------------------------------------------------------------------
 
