@@ -32,6 +32,7 @@ Pictures
 .nix-defexpr
 .npm
 .pnpm-state
+.solargraph
 .ssh
 .swiftpm
 .terraform.d

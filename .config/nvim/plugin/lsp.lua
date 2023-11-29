@@ -11,12 +11,13 @@ require('mason-lspconfig').setup({
     'lua_ls',
     'jsonls',
     'rust_analyzer',
+    'taplo',
     'yamlls',
     'zls',
 
     -- ruby
     'rubocop',
-    'ruby_ls',
+    'solargraph',
   },
   handlers = {
     lsp.default_setup,
