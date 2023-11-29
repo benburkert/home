@@ -12,7 +12,7 @@ require('mason-lspconfig').setup({
     'jsonls',
     'rust_analyzer',
     'taplo',
-    'terraform',
+    'terraformls',
     'yamlls',
     'zls',
 
