@@ -11,7 +11,7 @@
 #   - true
 #   - false (default)
 #   - disabled (do not modify new-session bindings)
-tmux_conf_new_session_prompt=false
+tmux_conf_new_session_prompt=true
 
 
 # -- windows & pane creation ---------------------------------------------------
@@ -377,6 +377,12 @@ set -g mouse on
 # move status line to top
 set -g status-position top
 
+# retain TERM=xterm-ghostty
+set -g default-terminal "xterm-ghostty"
+
+# disable C-a prefix
+set -gu prefix2
+unbind C-a
 
 # -- tpm -----------------------------------------------------------------------
 
