@@ -31,7 +31,9 @@ Pictures
 .gem
 .nix-defexpr
 .npm
+.npmrc
 .pnpm-state
+.pypirc
 .solargraph
 .ssh
 .swiftpm
