@@ -24,4 +24,3 @@ require('mason-lspconfig').setup({
     lsp.default_setup,
   },
 })
-

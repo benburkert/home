@@ -16,14 +16,14 @@ return require('packer').startup(function(use)
     branch = 'v3.x',
     requires = {
       -- LSP Support
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
-      {'williamboman/mason-lspconfig.nvim'},
+      { 'neovim/nvim-lspconfig' },
+      { 'williamboman/mason.nvim' },
+      { 'williamboman/mason-lspconfig.nvim' },
 
       -- Autocompletion
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'L3MON4D3/LuaSnip'},
+      { 'hrsh7th/nvim-cmp' },
+      { 'hrsh7th/cmp-nvim-lsp' },
+      { 'L3MON4D3/LuaSnip' },
     }
   }
   use { 'ellisonleao/gruvbox.nvim' }
@@ -40,7 +40,7 @@ return require('packer').startup(function(use)
   }
   use { 'nvim-telescope/telescope.nvim',
     tag = '0.1.4',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use { 'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
