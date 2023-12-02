@@ -1,1 +1,5 @@
-vim.keymap.set('n', '-', vim.cmd.Ex)
+vim.keymap.set('n', '-', function()
+  vim.cmd.Neotree({
+    'position=current',
+  })
+end)
