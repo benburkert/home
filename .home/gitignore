@@ -29,6 +29,7 @@ Pictures
 .cargo
 .fly
 .gem
+.irb_history
 .nix-defexpr
 .npm
 .npmrc
