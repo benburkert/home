@@ -30,26 +30,36 @@ require('neo-tree').setup({
   },
   window = {
     mappings = {
+      ['<cr>'] = 'open',
       ['o'] = 'open_split',
       ['v'] = 'open_vsplit',
     },
   },
 })
 
-local function neo_netrw(opts)
-  local fn = function()
-    require('neo-tree.command').execute(opts)
-  end
+vim.keymap.set('n', '-', function()
+  require('neo-tree.command').execute({
+    action = 'show',
+    source = 'filesystem',
+    position = 'current',
+    dir = vim.fn.expand('%:p:h'),
+  })
+end, { desc = "NeoNetrw - filesystem" })
 
-  return fn
-end
+vim.keymap.set('n', '<leader>-', function()
+  require('neo-tree.command').execute({
+    action = 'show',
+    source = 'buffers',
+    position = 'current',
+    dir = vim.fn.getcwd(),
+  })
+end, { desc = "NeoNetrw - buffers" })
 
-vim.keymap.set('n', '-',
-  neo_netrw({ action = 'show', source = 'filesystem', position = 'current' }),
-  { desc = "NeoNetrw - filesystem" })
-vim.keymap.set('n', '<leader>-',
-  neo_netrw({ action = 'show', source = 'buffers', position = 'current', dir = vim.fn.getcwd() }),
-  { desc = "NeoNetrw - buffers" })
-vim.keymap.set('n', '<leader>_',
-  neo_netrw({ action = 'show', source = 'git_status', position = 'current', dir = vim.fn.getcwd() }),
-  { desc = "NeoNetrw - git" })
+vim.keymap.set('n', '<leader>_', function()
+  require('neo-tree.command').execute({
+    action = 'show',
+    source = 'git_status',
+    position = 'current',
+    dir = vim.fn.getcwd(),
+  })
+end, { desc = "NeoNetrw - git" })
