@@ -1,5 +1,5 @@
 require('gruvbox').setup({
-	contrast = 'hard',
+  contrast = 'hard',
 })
 
 vim.cmd('colorscheme gruvbox')

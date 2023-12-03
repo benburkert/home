@@ -4,9 +4,9 @@ local function enter(state)
   local tree = state.tree
   local node = tree:get_node()
   if node.type == "directory" then
-	cc.set_root(state)
+    cc.set_root(state)
   elseif node.type == "file" then
-	cc.open(state)
+    cc.open(state)
   end
 end
 
@@ -14,31 +14,31 @@ require('neo-tree').setup({
   use_default_mappings = false,
   filesystem = {
     hijack_netrw_behavior = 'open_current',
-	window = {
-	  mappings = {
-		['%'] = 'add',
-		['-'] = 'navigate_up',
-		['<bs>'] = 'delete',
-		['<cr>'] = enter,
-		['D'] = 'delete',
-		['d'] = 'add_directory',
-		['o'] = 'open_split',
-		['r'] = 'rename',
-		['v'] = 'open_vsplit',
-	  },
-	},
+    window = {
+      mappings = {
+        ['%'] = 'add',
+        ['-'] = 'navigate_up',
+        ['<bs>'] = 'delete',
+        ['<cr>'] = enter,
+        ['D'] = 'delete',
+        ['d'] = 'add_directory',
+        ['o'] = 'open_split',
+        ['r'] = 'rename',
+        ['v'] = 'open_vsplit',
+      },
+    },
   },
   window = {
-	mappings = {
-	  ['o'] = 'open_split',
-	  ['v'] = 'open_vsplit',
-	},
+    mappings = {
+      ['o'] = 'open_split',
+      ['v'] = 'open_vsplit',
+    },
   },
 })
 
 local function neo_netrw(opts)
   local fn = function()
-	require('neo-tree.command').execute(opts)
+    require('neo-tree.command').execute(opts)
   end
 
   return fn
