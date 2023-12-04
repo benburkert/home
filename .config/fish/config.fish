@@ -5,8 +5,8 @@ end
 
 if status is-interactive
     alias home "git --work-tree=$HOME --git-dir=$HOME/.home"
-    alias vim "nvim"
-    alias vi "nvim"
+    alias vim nvim
+    alias vi nvim
 
     set -x EDITOR nvim
     set -x VISUAL nvim

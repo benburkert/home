@@ -108,7 +108,7 @@ function fish_prompt
     # date
 
     _prompt_wrapper green "" (date +%X)
-    
+
     # status
 
     _prompt_wrapper $retc "" $laststatus
