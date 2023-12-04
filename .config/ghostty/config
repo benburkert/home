@@ -2,6 +2,7 @@ window-theme = "dark"
 macos-option-as-alt = true
 clipboard-read = "allow"
 quit-after-last-window-closed = true
+minimum-contrast = 1
 
 # fonts : https://github.com/evilmartians/mono
 font-family = "MartianMonoCnRg Nerd Font"
