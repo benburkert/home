@@ -22,5 +22,5 @@ require('nvim-treesitter.configs').setup {
 
     -- shell
     'bash', 'fish',
-  }
+  },
 }

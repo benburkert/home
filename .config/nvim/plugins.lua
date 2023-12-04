@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     }
   }
   use { 'ellisonleao/gruvbox.nvim' }
+  use { 'lewis6991/gitsigns.nvim' }
   use { 'nathom/filetype.nvim' }
   use { 'nvim-lualine/lualine.nvim',
     requires = { { 'nvim-tree/nvim-web-devicons' } }
