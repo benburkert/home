@@ -8,6 +8,6 @@ if status is-interactive
     alias vim "nvim"
     alias vi "nvim"
 
-    set -x EDITOR vim
-    set -x VISUAL vim
+    set -x EDITOR nvim
+    set -x VISUAL nvim
 end
