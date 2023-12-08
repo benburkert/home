@@ -7,6 +7,7 @@
 .bash_history
 .lesshst
 .local
+tmp
 
 # macos
 .Trash
