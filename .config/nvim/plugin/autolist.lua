@@ -1,6 +1,10 @@
 local function auto_list()
   local current_pos = vim.fn.getpos('.')
-  vim.o.list = (vim.fn.search('^\t') > 0 and vim.fn.search('^ ') > 0)
+  vim.o.list = (
+    (vim.fn.search('^\t') > 0 and vim.fn.search('^ ') > 0)
+    or (vim.fn.search('^  *\t') > 0)
+    or (vim.fn.search('^\t\t* ') > 0)
+  )
   vim.fn.setpos('.', current_pos)
 end
 
