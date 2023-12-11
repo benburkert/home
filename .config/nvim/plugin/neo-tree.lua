@@ -14,6 +14,10 @@ require('neo-tree').setup({
   use_default_mappings = false,
   filesystem = {
     bind_to_cwd = false,
+    filtered_items = {
+      visible = true,
+      hide_dotfiles = false,
+    },
     hijack_netrw_behavior = 'open_current',
     window = {
       mappings = {
