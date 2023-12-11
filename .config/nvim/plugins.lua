@@ -46,6 +46,7 @@ return require('packer').startup(function(use)
   use { 'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use { 'sanfusu/neovim-undotree' }
   use { 'wbthomason/packer.nvim' }
 
   -- Automatically set up your configuration after cloning packer.nvim
