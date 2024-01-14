@@ -28,6 +28,8 @@ Pictures
 .bundle
 .cache
 .cargo
+.config/rubocop
+.config/wireshark
 .fly
 .gem
 .irb_history

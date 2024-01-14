@@ -1,5 +1,5 @@
-tap "anchordotdev/tap"
-tap "owenthereal/upterm"
+tap 'anchordotdev/tap'
+tap 'owenthereal/upterm'
 
 # libraries
 brew 'icu4c', link: true
@@ -22,3 +22,5 @@ brew 'tmux'
 brew 'tree'
 brew 'watch'
 brew 'icu4c'
+
+cask 'wireshark'
