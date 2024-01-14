@@ -1,6 +1,6 @@
 function work -a session
     if string length --quiet $TMUX
-        return
+        return 1
     end
 
     if not string length --quiet $session
