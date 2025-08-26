@@ -7,3 +7,8 @@
 
 # vim
 *.bak
+
+# docker
+.docker
+.kube
+.minikube

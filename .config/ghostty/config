@@ -5,7 +5,10 @@ quit-after-last-window-closed = true
 minimum-contrast = 1
 
 # fonts : https://github.com/evilmartians/mono
-font-family = "MartianMonoCnRg Nerd Font"
+font-family = "MartianMono NFM"
+font-family-bold = "MartianMono NFM Cond"
+font-family-italic = "Menlo Italic"
+font-family-bold-italic = "Menlo Bold Italic"
 font-size = 13
 
 # keybinds
