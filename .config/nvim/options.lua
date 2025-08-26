@@ -14,7 +14,7 @@ vim.opt.backspace = 'indent,eol,start'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
 
-vim.api.nvim_set_option('clipboard','unnamed')
+vim.api.nvim_set_option_value('clipboard', 'unnamed', {})
 
 -- file sync
 
