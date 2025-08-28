@@ -1,3 +1,4 @@
+source ~/.config/fish/functions/go.fish
 source ~/.config/fish/functions/nodejs.fish
 source ~/.config/fish/functions/python.fish
 source ~/.config/fish/functions/ruby.fish
