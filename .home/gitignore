@@ -38,6 +38,7 @@ Pictures
 .npmrc
 .pnpm-state
 .pypirc
+.rustup
 .solargraph
 .ssh
 .swiftpm
