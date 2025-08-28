@@ -12,9 +12,5 @@ function work -a session
         exec tmux attach-session -t $session
     end
 
-    if test $session = solo
-        exec tmux new-session -s $session
-    end
-
-    exec upterm host --force-command "tmux attach -t $session" -- tmux new-session -s $session
+    exec tmux new-session -s $session
 end
