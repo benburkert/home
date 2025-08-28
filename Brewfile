@@ -1,26 +1,77 @@
 tap 'anchordotdev/tap'
-tap 'owenthereal/upterm'
+tap 'riscv-software-src/riscv'
+tap 'fastly/tap'
 
 # libraries
 brew 'icu4c', link: true
+brew 'isl', link: true
+brew 'libpq', link: false
+brew 'libsodium', link: true
+brew 'libyaml', link: true
 
 # services
-brew 'postgresql@15', restart_service: true, link: true
+brew 'postgresql@17', restart_service: true, link: true
 brew 'redis', restart_service: true, link: true
 
 # utilities
+brew 'acme.sh'
 brew 'anchor'
+brew 'asciinema'
 brew 'asdf'
+brew 'awscli'
+brew 'bash'
+brew 'binutils'
+brew 'caddy'
+brew 'certbot'
+brew 'colordiff'
+brew 'coreutils'
+brew 'curl'
+brew 'direnv'
+brew 'fastly'
+brew 'fish'
 brew 'flyctl'
 brew 'gh'
 brew 'git'
+brew 'go'
+brew 'gnuplot'
+brew 'gopls'
+brew 'goreleaser'
 brew 'htop'
+brew 'http-server'
+brew 'icu4c'
+brew 'jj'
+brew 'jq'
+brew 'lld'
+brew 'llvm'
+brew 'mkcert'
+brew 'mtr'
+brew 'ninja'
 brew 'nvim'
-brew 'upterm'
+brew 'overmind'
+brew 'pstree'
+brew 'qemu'
 brew 'reattach-to-user-namespace'
+brew 'ripgrep'
+brew 'riscv-gnu-toolchain'
+brew 'riscv-isa-sim'
+brew 'riscv-pk'
+brew 'riscv-tools'
+brew 'riscv64-elf-binutils'
+brew 'riscv64-elf-gcc'
+brew 'riscv64-elf-gdb'
+brew 'rust'
+brew 'rustup'
+brew 'tailscale'
+brew 'telnet'
 brew 'tmux'
 brew 'tree'
 brew 'watch'
-brew 'icu4c'
+brew 'wget'
+brew 'yq'
 
-cask 'wireshark'
+cask 'gcloud-cli'
+cask 'ngrok'
+cask 'wireshark-app'
+
+# fonts
+cask 'font-martian-mono-nerd-font'
