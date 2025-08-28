@@ -1,0 +1,9 @@
+{
+  "gopls": "v0.20.0",
+  "json-lsp": "4.10.0",
+  "lua-language-server": "3.15.0",
+  "rubocop": "1.79.1",
+  "solargraph": "0.56.2",
+  "yaml-language-server": "1.18.0",
+  "zls": "0.15.0"
+}

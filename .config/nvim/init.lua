@@ -1,2 +1,3 @@
-require('options')
-require('plugins')
+require('config.options')
+require('config.plugins')
+require('config.diagnostics')

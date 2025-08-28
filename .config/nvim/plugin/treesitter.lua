@@ -1,26 +1,39 @@
-require('nvim-treesitter.configs').setup {
-  ensure_installed = {
-    'c', 'cpp', 'css', 'json', 'nix', 'regex', 'rust', 'sql', 'toml', 'vimdoc', 'yaml', 'zig',
+return {
+  {
+    'nvim-treesitter/nvim-treesitter',
+    branch = 'master',
+    lazy = false,
+    build = ':TSUpdate',
+    config = function ()
+      require('nvim-treesitter.configs').setup({
+        ensure_installed = {
+          'c', 'cpp', 'css', 'json', 'nix', 'regex', 'rust', 'sql', 'toml', 'vimdoc', 'yaml', 'zig',
 
-    -- git
-    'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit',
+          -- git
+          'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit',
 
-    -- go
-    'go', 'gomod', 'gosum', 'gowork',
+          -- go
+          'go', 'gomod', 'gosum', 'gowork',
 
-    -- python
-    'python',
+          -- python
+          'python',
 
-    -- ruby
-    'ruby', 'embedded_template',
+          -- ruby
+          'ruby', 'embedded_template',
 
-    -- terraform
-    'hcl', 'terraform',
+          -- terraform
+          'hcl', 'terraform',
 
-    -- vim
-    'lua', 'vim', 'vimdoc',
+          -- vim
+          'lua', 'vim', 'vimdoc',
 
-    -- shell
-    'bash', 'fish',
+          -- shell
+          'bash', 'fish',
+
+          -- zig
+          'zig',
+        },
+      })
+    end,
   },
 }

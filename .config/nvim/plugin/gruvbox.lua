@@ -1,5 +1,8 @@
-require('gruvbox').setup({
-  contrast = 'hard',
-})
-
-vim.cmd('colorscheme gruvbox')
+return {
+  {
+    'ellisonleao/gruvbox.nvim',
+    opts = {
+      contrast = 'hard',
+    },
+  },
+}
