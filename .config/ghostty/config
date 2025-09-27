@@ -15,4 +15,4 @@ font-size = 13
 keybind = ctrl+space=esc:
 
 # theme
-theme = gruvbox-material
+theme = Gruvbox Material
