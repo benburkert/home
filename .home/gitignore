@@ -33,6 +33,7 @@ Pictures
 .fly
 .gem
 .irb_history
+.lldb
 .nix-defexpr
 .npm
 .npmrc
@@ -45,6 +46,7 @@ Pictures
 .terraform.d
 .upterm
 .yarnrc
+bin
 go
 src
 
