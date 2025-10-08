@@ -7,13 +7,11 @@ return {
   },
   {
     'zapling/mason-lock.nvim',
-    opts = {
+    init = function()
+      require("mason-lock").setup({
         lockfile_path = lockfile_path,
-    },
-  },
-  {
-    'mason-org/mason-lspconfig.nvim',
-    config = function ()
+      })
+
       local registry = require("mason-registry")
       local lockfile_json = vim.json.decode(io.open(lockfile_path):read('*all'))
 
@@ -28,9 +26,9 @@ return {
         vim.tbl_keys(lockfile_json)
       )
 
-      require('mason-lspconfig').setup({
-        ensure_installed = packages,
-      })
+      for _, pkg in ipairs(packages) do
+        vim.lsp.enable(pkg)
+      end
     end,
   },
 }
