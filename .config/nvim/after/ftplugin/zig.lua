@@ -8,6 +8,6 @@ require("codeactions-on-save").register(
 vim.api.nvim_create_autocmd('BufWritePre',{
   pattern = {"*.zig", "*.zon"},
   callback = function()
-    vim.lsp.buf.format()
+    vim.lsp.buf.format({ async = false })
   end
 })
