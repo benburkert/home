@@ -8,10 +8,4 @@ return {
     '.jj',
     '.git',
   },
-  settings = {
-    zls = {
-      enable_argument_placeholders = true,
-      enable_build_on_save = true,
-    },
-  },
 }
