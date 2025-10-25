@@ -3,7 +3,7 @@
   "json-lsp": "4.10.0",
   "lua-language-server": "3.15.0",
   "rubocop": "1.79.1",
-  "solargraph": "0.56.2",
+  "ruby-lsp": "0.26.1",
   "yaml-language-server": "1.19.2",
   "zls": "0.15.0"
 }
