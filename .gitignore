@@ -1,9 +1,11 @@
 # universal
 .tmp
+.gnupg
 
 # macos
 .CFUserTextEncoding
 .DS_Store
+Google Drive
 
 # vim
 *.bak
