@@ -11,12 +11,30 @@ Google Drive
 *.bak
 
 # docker
+.cagent
 .docker
 .kube
 .minikube
+.config/cagent
+
+# homebrew
+Brewfile.*
 
 # gcp
-.config/gcloud/
+.config/gcloud
 
 # postgres
 .psql_history
+
+# claude
+.claude
+.claude.*
+
+# 1Password
+.config/op
+
+# mage
+.magefile
+
+# tilt
+.tilt-dev

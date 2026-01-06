@@ -10,7 +10,6 @@ brew 'libsodium', link: true
 brew 'libyaml', link: true
 
 # services
-brew 'postgresql@17', restart_service: true, link: true
 brew 'redis', restart_service: true, link: true
 
 # utilities
@@ -76,3 +75,7 @@ cask 'wireshark-app'
 
 # fonts
 cask 'font-martian-mono-nerd-font'
+
+# by hostname
+host_file = "Brewfile.#{Socket.gethostname}"
+instance_eval(File.read(host_file)) if File.exist?(host_file)
