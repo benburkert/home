@@ -5,6 +5,8 @@
 [user]
 	name = Ben Burkert
 	email = ben@benburkert.com
+[credential]
+	helper = osxkeychain
 [credential "https://github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential

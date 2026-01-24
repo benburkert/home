@@ -5,7 +5,6 @@
 # macos
 .CFUserTextEncoding
 .DS_Store
-Google Drive
 
 # vim
 *.bak
@@ -26,9 +25,11 @@ Brewfile.*
 # postgres
 .psql_history
 
-# claude
+# agents
+CLAUDE.md
 .claude
 .claude.*
+.ollama
 
 # 1Password
 .config/op
@@ -38,3 +39,6 @@ Brewfile.*
 
 # tilt
 .tilt-dev
+
+# LLVM
+local
