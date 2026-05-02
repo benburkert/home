@@ -1,1 +1,1 @@
-vim.lsp.config('ruby_lsp', {})
+vim.lsp.enable('ruby')
