@@ -28,6 +28,7 @@ Pictures
 .bundle
 .cache
 .cargo
+.config/flow
 .config/rubocop
 .config/wireshark
 .fly
@@ -45,6 +46,7 @@ Pictures
 .swiftpm
 .terraform.d
 .upterm
+.wget-hsts
 .yarnrc
 bin
 go
