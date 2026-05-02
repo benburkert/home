@@ -21,7 +21,8 @@ function fish_prompt
         set git_branch (set_color -o blue)"$git_branch"
         set -l git_status
         if not command git diff-index --quiet HEAD 2>/dev/null --
-            if set -l count (command git rev-list --count --left-right $upstream...HEAD 2>/dev/null)
+            set -l upstream (command git rev-parse --abbrev-ref '@{upstream}' 2>/dev/null)
+            if set --query upstream[1]; and set -l count (command git rev-list --count --left-right $upstream...HEAD 2>/dev/null)
                 echo $count | read -l ahead behind
                 if test "$ahead" -gt 0
                     set git_status "$git_status"(set_color red)⬆
