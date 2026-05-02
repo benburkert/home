@@ -15,19 +15,12 @@ return {
       local registry = require("mason-registry")
       local lockfile_json = vim.json.decode(io.open(lockfile_path):read('*all'))
 
-      local packages = vim.tbl_map(
-        function (pkg_name)
-          local pkg = registry.get_package(pkg_name)
-          if pkg.spec.neovim == nil then
-              return pkg_name
-          end
-          return pkg.spec.neovim.lspconfig
-        end,
-        vim.tbl_keys(lockfile_json)
-      )
-
-      for _, pkg in ipairs(packages) do
-        vim.lsp.enable(pkg)
+      for _, pkg_name in ipairs(vim.tbl_keys(lockfile_json)) do
+        local pkg = registry.get_package(pkg_name)
+        local name = pkg.spec.neovim and pkg.spec.neovim.lspconfig or pkg_name
+        if name then
+          vim.lsp.enable(name)
+        end
       end
     end,
   },
