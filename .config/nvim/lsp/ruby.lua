@@ -1,7 +1,7 @@
 ---@type vim.lsp.Config
 return {
   cmd = { 'ruby-lsp' },
-  filetypes = { 'rb' },
+  filetypes = { 'ruby' },
   root_markers = {
     'Gemfile',
     '.jj',
