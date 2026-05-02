@@ -3,6 +3,21 @@ source ~/.config/fish/functions/nodejs.fish
 source ~/.config/fish/functions/python.fish
 source ~/.config/fish/functions/ruby.fish
 
+function _prompt_wrapper
+    set clr $argv[1]
+    set -l field_name $argv[2]
+    set -l field_value $argv[3]
+
+    set_color normal
+    set_color white
+    echo -n '❙'
+    test -n "$field_name"
+    and echo -n "$field_name "
+    set_color $clr
+    echo -n $field_value
+    set_color -o white
+end
+
 function fish_prompt
     # This prompt shows:
     # - the current path (with prompt_pwd)
@@ -51,21 +66,6 @@ function fish_prompt
             set git_status (set_color green):
         end
         set git_info " $git_status$git_branch"
-    end
-
-    function _prompt_wrapper
-        set clr $argv[1]
-        set -l field_name $argv[2]
-        set -l field_value $argv[3]
-
-        set_color normal
-        set_color white
-        echo -n '❙'
-        test -n "$field_name"
-        and echo -n "$field_name "
-        set_color $clr
-        echo -n $field_value
-        set_color -o white
     end
 
     set_color normal
