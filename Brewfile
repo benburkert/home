@@ -1,81 +1,98 @@
-tap 'anchordotdev/tap'
-tap 'riscv-software-src/riscv'
-tap 'fastly/tap'
-
-# libraries
-brew 'icu4c', link: true
-brew 'isl', link: true
-brew 'libpq', link: false
-brew 'libsodium', link: true
-brew 'libyaml', link: true
-
-# services
-brew 'redis', restart_service: true, link: true
-
-# utilities
-brew 'acme.sh'
-brew 'afl++'
-brew 'anchor'
-brew 'asciinema'
-brew 'awscli'
-brew 'bash'
-brew 'binutils'
-brew 'caddy'
-brew 'certbot'
-brew 'cmake'
-brew 'colordiff'
-brew 'coreutils'
-brew 'curl'
-brew 'fastly'
-brew 'fish'
-brew 'flyctl'
-brew 'gh'
-brew 'git'
-brew 'gnuplot'
-brew 'go'
-brew 'gopls'
-brew 'goreleaser'
-brew 'htop'
-brew 'http-server'
-brew 'hugo'
-brew 'hyperfine'
-brew 'icu4c'
-brew 'jj'
-brew 'jq'
-brew 'lld'
-brew 'llvm'
-brew 'mise'
-brew 'mkcert'
-brew 'mtr'
-brew 'ninja'
-brew 'nvim'
-brew 'overmind'
-brew 'pstree'
-brew 'qemu'
-brew 'reattach-to-user-namespace'
-brew 'ripgrep'
-brew 'riscv-gnu-toolchain'
-brew 'riscv-isa-sim'
-brew 'riscv-pk'
-brew 'riscv-tools'
-brew 'riscv64-elf-binutils'
-brew 'riscv64-elf-gcc'
-brew 'riscv64-elf-gdb'
-brew 'tailscale'
-brew 'telnet'
-brew 'tmux'
-brew 'tree'
-brew 'watch'
-brew 'wget'
-brew 'yq'
-
-cask 'gcloud-cli'
-cask 'ngrok'
-cask 'wireshark-app'
-
-# fonts
-cask 'font-martian-mono-nerd-font'
-
-# by hostname
-host_file = "Brewfile.#{Socket.gethostname}"
-instance_eval(File.read(host_file)) if File.exist?(host_file)
+tap "anchordotdev/tap"
+tap "boldsoftware/tap"
+tap "fastly/tap"
+tap "riscv-software-src/riscv"
+brew "acme.sh"
+brew "ca-certificates"
+brew "zstd"
+brew "llvm"
+brew "afl++"
+brew "asciinema"
+brew "awscli"
+brew "bash"
+brew "binutils"
+brew "caddy"
+brew "glib"
+brew "cryptography"
+brew "libyaml"
+brew "certbot"
+brew "cloc"
+brew "cmake"
+brew "colordiff"
+brew "gmp"
+brew "coreutils"
+brew "curl"
+brew "fd"
+brew "fish"
+brew "flow-control"
+brew "flyctl"
+brew "gh"
+brew "git"
+brew "harfbuzz"
+brew "lua"
+brew "pango"
+brew "gnuplot"
+brew "go"
+brew "gopls"
+brew "goreleaser"
+brew "htop"
+brew "http-server"
+brew "hugo"
+brew "hyperfine"
+brew "imagemagick"
+brew "isl"
+brew "jj"
+brew "jq"
+brew "libpq"
+brew "libsodium"
+brew "lld"
+brew "ninja"
+brew "meson"
+brew "mise"
+brew "mkcert"
+brew "yt-dlp"
+brew "mpv"
+brew "mtr"
+brew "tree-sitter"
+brew "neovim"
+brew "ollama", restart_service: :changed
+brew "tmux"
+brew "overmind"
+brew "pkgconf"
+brew "postgresql@17", restart_service: :changed, link: true
+brew "pstree"
+brew "python@3.12"
+brew "qemu"
+brew "qt"
+brew "reattach-to-user-namespace"
+brew "redis", restart_service: :changed
+brew "ripgrep"
+brew "riscv64-elf-binutils"
+brew "riscv64-elf-gcc"
+brew "riscv64-elf-gdb"
+brew "streamlink"
+brew "tailscale"
+brew "telnet"
+brew "tree"
+brew "watch"
+brew "wget"
+brew "yq"
+brew "anchordotdev/tap/anchor"
+brew "fastly/tap/fastly"
+brew "riscv-software-src/riscv/riscv-gnu-toolchain"
+brew "riscv-software-src/riscv/riscv-isa-sim"
+brew "riscv-software-src/riscv/riscv-pk"
+brew "riscv-software-src/riscv/riscv-tools"
+cask "claude-code"
+cask "font-martian-mono-nerd-font"
+cask "gcloud-cli"
+cask "ngrok"
+cask "boldsoftware/tap/sketch"
+cask "wireshark-app"
+go "cmd/go"
+go "cmd/gofmt"
+cargo "cargo-binstall"
+cargo "dumbpipe"
+cargo "elf-info"
+cargo "mdbook"
+cargo "viceroy"
