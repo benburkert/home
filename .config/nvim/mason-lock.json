@@ -1,9 +1,9 @@
 {
-  "gopls": "v0.21.0",
+  "gopls": "v0.23.0",
   "json-lsp": "4.10.0",
-  "lua-language-server": "3.17.1",
-  "rubocop": "1.82.1",
-  "ruby-lsp": "0.26.5",
-  "yaml-language-server": "1.19.2",
-  "zls": "0.15.1"
+  "lua-language-server": "3.19.2",
+  "rubocop": "1.92.0",
+  "ruby-lsp": "0.26.11",
+  "yaml-language-server": "2.0.0",
+  "zls": "0.17.0"
 }
