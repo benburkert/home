@@ -1,4 +1,3 @@
-vim.lsp.enable('zig')
 vim.lsp.inlay_hint.enable()
 
 require("codeactions-on-save").register(
