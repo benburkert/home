@@ -3,6 +3,9 @@
 !.home/config
 !.home/gitignore
 
+# git
+.gitconfig.local
+
 # universal
 .bash_history
 .lesshst
